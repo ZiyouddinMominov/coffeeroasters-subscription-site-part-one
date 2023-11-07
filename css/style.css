@@ -200,6 +200,10 @@ a {
   margin-bottom: 24px;
 }
 
+.main__container {
+  margin-bottom: 50px;
+}
+
 @media screen and (max-width: 1290px) {
   .main__container__item {
     display: -webkit-box;
