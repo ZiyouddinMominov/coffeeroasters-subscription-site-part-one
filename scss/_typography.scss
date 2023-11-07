@@ -1,0 +1,47 @@
+.text-style-paragraph {
+  font-family: $font-family-one;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.title-style-big {
+  color: $grey-color;
+  font-family: $font-family-two;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+  text-transform: lowercase;
+}
+.title-style-h1 {
+  font-family: $font-family-two;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+}
+.title-style-h2 {
+  color: $black-color;
+  font-family: $font-family-two;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+}
+.title-style-h3 {
+  color: $black-color;
+  font-family: $font-family-two;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
+}
+.title-style-h4 {
+  color: $black-color;
+  font-family: $font-family-two;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+}

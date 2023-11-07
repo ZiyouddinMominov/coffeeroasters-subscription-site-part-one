@@ -1,0 +1,378 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1381px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-bottom: 57px;
+  padding-top: 44px;
+}
+
+.header__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__button__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 33px;
+}
+
+.header__button__link--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1290px) {
+  .container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 695px) {
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__button__link {
+    display: none;
+  }
+  .header__button__link--mobile {
+    display: block;
+  }
+}
+.hero__container {
+  background-image: url("../image/desktop-image.png");
+  max-width: 1280px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.hero__container__content {
+  padding-top: 117px;
+  padding-left: 85px;
+}
+
+.hero__container__content__title {
+  width: 493px;
+  color: #fefcf7;
+  margin-bottom: 32px;
+}
+
+.hero__container__content__paragraph {
+  color: #fefcf7;
+  width: 417px;
+  margin-bottom: 56px;
+}
+
+@media screen and (max-width: 1290px) {
+  .hero__container {
+    background-image: url("../image/tablet-image.jpg");
+    background-repeat: no-repeat;
+    width: 689px;
+    height: 500px;
+  }
+  .hero__container__content {
+    padding-top: 104px;
+    padding-left: 58px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .hero__container {
+    background-image: url("../image/mobile-image.jpg");
+    background-repeat: no-repeat;
+    width: 327px;
+    height: 500px;
+  }
+  .hero__container .title-style-h1 {
+    width: 279px;
+    padding-top: 100px;
+    color: #fefcf7;
+    text-align: center;
+    font-family: Fraunces 9pt;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px; /* 100% */
+  }
+  .hero__container .text-style-paragraph {
+    width: 279px;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .hero__container .hero__container__content {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .hero__container .hero__container__content__title {
+    margin-bottom: 24px;
+  }
+  .hero__container .hero__container__content__paragraph {
+    margin-bottom: 39px;
+  }
+}
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 262px;
+}
+.main__container div {
+  width: 255px;
+}
+.main__container div p {
+  width: 255px;
+  text-align: center;
+}
+.main__container div h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1290px) {
+  .main__container__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 35px;
+    margin-bottom: 50px;
+  }
+  .main__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__container div {
+    width: 282px;
+  }
+  .main__container div p {
+    width: 282px;
+    text-align: start;
+  }
+  .main__container div h3 {
+    text-align: start;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .main__container__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 35px;
+    margin-bottom: 50px;
+  }
+  .main__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__container div {
+    width: 255px;
+  }
+  .main__container div p {
+    width: 255px;
+    text-align: center;
+  }
+  .main__container div h3 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .main__container__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/barlow-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.main-button {
+  border-radius: 6px;
+  background: #0e8784;
+  color: #fefcf7;
+  text-align: center;
+  font-family: Fraunces, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 15px 30px 15px 30px;
+}
+
+.main-button:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #66d2cf;
+}
+
+.main-button:active {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #e2dedb;
+}
+
+.text-style-link {
+  color: #83888f;
+  font-family: Barlow, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+}
+
+.text-style-link:hover {
+  color: #333d4b;
+}
+
+.text-style-paragraph {
+  font-family: Barlow, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.title-style-big {
+  color: #83888f;
+  font-family: Fraunces, sans-serif;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+  text-transform: lowercase;
+}
+
+.title-style-h1 {
+  font-family: Fraunces, sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+.title-style-h2 {
+  color: #333d4b;
+  font-family: Fraunces, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+}
+
+.title-style-h3 {
+  color: #333d4b;
+  font-family: Fraunces, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
+}
+
+.title-style-h4 {
+  color: #333d4b;
+  font-family: Fraunces, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+}
